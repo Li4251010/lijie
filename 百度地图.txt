@@ -1,0 +1,25 @@
+定位功能
+LocationClient进行定位的一些设置,如: GBS,省电,维度
+BDLocationListener 定位是一个耗时的操作,所以需要用到异步
+
+需要通过LocationClient对BDLocationListener 进行注册
+
+自定义图标
+	引入方向传感器
+		让方向指针随着我们的手机转到而转到
+		
+定位模式
+	普通模式
+	跟随模式
+	罗盘模式
+	
+	// 更新定位图标(默认)--小箭头---参数2是模式
+			MyLocationConfiguration configuration = new MyLocationConfiguration(
+					mLocationMode, true, mIconLocation);
+			mBaiduMap.setMyLocationConfigeration(configuration);
+				
+添加覆盖物	
+	Marker 覆盖物	需要经纬度,显示在地图上
+	OverlayOptions 图层,定义图标等
+	
+	
